@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  iExpense
-//
-//  Created by Yossi Shirizli on 16/11/2024.
-//
-
 import SwiftUI
 
 struct ContentView: View {
