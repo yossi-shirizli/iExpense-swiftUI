@@ -9,6 +9,12 @@ class Expenses {
             }
         }
     }
+    var personalExpense: [ExpenseItem] {
+        items.filter { $0.type == "Personal" }
+    }
+    var bussinesExpense: [ExpenseItem] {
+        items.filter { $0.type == "Business" }
+    }
     
     init() {
         if let savedItems = UserDefaults.standard.data(forKey: "Items") {
