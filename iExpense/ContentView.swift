@@ -17,6 +17,7 @@ struct ContentView: View {
                         }
                         Spacer()
                         Text(item.amount, format: .currency(code: Locale.current.currency?.identifier ?? "USD"))
+                            .expenseStyle(for: item)
                     }
                 }
                 .onDelete(perform: removeItems)
